@@ -17,7 +17,7 @@ client.on('messageCreate', (message) => {
 
     let MessageGood = message.content.toLowerCase()
     MessageGood = MessageGood.split('.').join("");
-    MessageGood = MessageGood.replace(/\s/g, '');
+    MessageGood = MessageGood.replace(/[^a-z]+/g, '');
     
     if(MessageGood.includes('ping')){
         message.reply({
