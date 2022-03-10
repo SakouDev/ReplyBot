@@ -17,7 +17,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {3
 
     let MessageGood:any = ''
     MessageGood = newMessage.content?.toLowerCase()
-    MessageGood = MessageGood?.replace(/[^a-zA-Z]+/g, '');
+    MessageGood = MessageGood?.replace(/[^a-zA-Z\u00C0-\u00FF]+/g, '');
 
 
     if(MessageGood.includes('ping')){
@@ -81,11 +81,6 @@ client.on('messageUpdate', (oldMessage, newMessage) => {3
         })
     }
     if(MessageGood.includes('wé')){
-        newMessage.reply({
-            content: 'stern',
-        })
-    }
-    if(MessageGood.includes('woé')){
         newMessage.reply({
             content: 'stern',
         })
@@ -101,7 +96,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {3
 client.on('messageCreate', (message) => {
 
     let MessageGood = message.content.toLowerCase()
-    MessageGood = MessageGood.replace(/[^a-zA-Z]+/g, '');
+    MessageGood = MessageGood.replace(/[^a-zA-Z\u00C0-\u00FF]+/g, '');
     
     if(MessageGood.includes('ping')){
         message.reply({
@@ -164,11 +159,6 @@ client.on('messageCreate', (message) => {
         })
     }
     if(MessageGood.includes('wé')){
-        message.reply({
-            content: 'stern',
-        })
-    }
-    if(MessageGood.includes('woé')){
         message.reply({
             content: 'stern',
         })
