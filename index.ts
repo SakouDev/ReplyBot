@@ -55,16 +55,47 @@ client.on('messageUpdate', (oldMessage, newMessage) => {3
             content: 'feur',
         })
     }
-    if(MessageGood.includes('oui')){
-        newMessage.reply({
-            content: 'stisti',
-        })
-    }
     if(MessageGood.includes('ui')){
         newMessage.reply({
-            content: 'stisti',
+            content: 'stiti',
         })
     }
+    if(MessageGood.includes('wi')){
+        newMessage.reply({
+            content: 'stiti',
+        })
+    }
+    if(MessageGood.includes('ouai')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('oé')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('oué')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('wé')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('woé')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('wai')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    
 })
 
 client.on('messageCreate', (message) => {
@@ -107,18 +138,61 @@ client.on('messageCreate', (message) => {
             content: 'feur',
         })
     }
-    if(MessageGood.includes('oui')){
-        message.reply({
-            content: 'stisti',
-        })
-    }
     if(MessageGood.includes('ui')){
         message.reply({
-            content: 'stisti',
+            content: 'stiti',
+        })
+    }
+    if(MessageGood.includes('wi')){
+        message.reply({
+            content: 'stiti',
+        })
+    }
+    if(MessageGood.includes('ouai')){
+        message.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('oé')){
+        message.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('oué')){
+        message.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('wé')){
+        message.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('woé')){
+        message.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('wai')){
+        message.reply({
+            content: 'stern',
         })
     }
 })
 
+client.on('messageCreate', (message) => {
+
+    if(message.content.includes('🇵 ℹ️ 🇳 🇬')){
+        message.reply({
+            content: 'pong',
+        })
+    }
+    if(message.content.includes('🅾️ 🇺 🇮')){
+        message.reply({
+            content: 'stiti',
+        })
+    }
+})
 
 
 client.login(process.env.TOKEN)
