@@ -75,12 +75,42 @@ client.on('messageUpdate', (oldMessage, newMessage) => {3
             content: 'stern',
         })
     }
+    if(MessageGood.includes('oe')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('oè')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
     if(MessageGood.includes('oué')){
         newMessage.reply({
             content: 'stern',
         })
     }
+    if(MessageGood.includes('oue')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('ouè')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
     if(MessageGood.includes('wé')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('we')){
+        newMessage.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('wè')){
         newMessage.reply({
             content: 'stern',
         })
@@ -96,7 +126,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {3
 client.on('messageCreate', (message) => {
 
     let MessageGood = message.content.toLowerCase()
-    MessageGood = MessageGood.replace(/[^a-zA-Z\u00C0-\u00FF]+/g, '');
+    MessageGood = MessageGood.replace(/[^a-zA-Zàè\u00C0-\u00FF]+/g, '');
     
     if(MessageGood.includes('ping')){
         message.reply({
@@ -153,12 +183,42 @@ client.on('messageCreate', (message) => {
             content: 'stern',
         })
     }
+    if(MessageGood.includes('oe')){
+        message.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('oè')){
+        message.reply({
+            content: 'stern',
+        })
+    }
     if(MessageGood.includes('oué')){
         message.reply({
             content: 'stern',
         })
     }
+    if(MessageGood.includes('oue')){
+        message.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('ouè')){
+        message.reply({
+            content: 'stern',
+        })
+    }
     if(MessageGood.includes('wé')){
+        message.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('we')){
+        message.reply({
+            content: 'stern',
+        })
+    }
+    if(MessageGood.includes('wè')){
         message.reply({
             content: 'stern',
         })
