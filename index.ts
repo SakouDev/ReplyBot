@@ -10,55 +10,56 @@ const client = new DiscordJS.Client({
 })
 
 client.on('ready', () => {
-    console.log("The Bot is Ready")
+    console.log("The Bot is Ready to Troll")
 })
 
 client.on('messageCreate', (message) => {
 
-    let messageL = message.content.toLowerCase()
-    let messageLower = messageL.replace(/\s/g, '');
+    let MessageGood = message.content.toLowerCase()
+    MessageGood = MessageGood.split('.').join("");
+    MessageGood = MessageGood.replace(/\s/g, '');
     
-    if(messageLower.includes('ping')){
+    if(MessageGood.includes('ping')){
         message.reply({
             content: 'pong',
         })
     }
-    if(messageLower.includes('quoi')){
+    if(MessageGood.includes('quoi')){
         message.reply({
             content: 'feur',
         })
     }
-    if(messageLower.includes('qwa')){
+    if(MessageGood.includes('qwa')){
         message.reply({
             content: 'feur',
         })
     }
-    if(messageLower.includes('kwa')){
+    if(MessageGood.includes('kwa')){
         message.reply({
             content: 'feur',
         })
     }
-    if(messageLower.includes('koi')){
+    if(MessageGood.includes('koi')){
         message.reply({
             content: 'feur',
         })
     }
-    if(messageLower.includes('koa')){
+    if(MessageGood.includes('koa')){
         message.reply({
             content: 'feur',
         })
     }
-    if(messageLower.includes('koua')){
+    if(MessageGood.includes('koua')){
         message.reply({
             content: 'feur',
         })
     }
-    if(messageLower.includes('oui')){
+    if(MessageGood.includes('oui')){
         message.reply({
             content: 'stisti',
         })
     }
-    if(messageLower.includes('ui')){
+    if(MessageGood.includes('ui')){
         message.reply({
             content: 'stisti',
         })
