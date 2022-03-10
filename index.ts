@@ -15,8 +15,9 @@ client.on('ready', () => {
 
 client.on('messageCreate', (message) => {
 
-    let messageLower = message.content.toLowerCase()
-
+    let messageL = message.content.toLowerCase()
+    let messageLower = messageL.replace(/\s/g, '');
+    
     if(messageLower.includes('ping')){
         message.reply({
             content: 'pong',
@@ -27,7 +28,37 @@ client.on('messageCreate', (message) => {
             content: 'feur',
         })
     }
+    if(messageLower.includes('qwa')){
+        message.reply({
+            content: 'feur',
+        })
+    }
+    if(messageLower.includes('kwa')){
+        message.reply({
+            content: 'feur',
+        })
+    }
+    if(messageLower.includes('koi')){
+        message.reply({
+            content: 'feur',
+        })
+    }
+    if(messageLower.includes('koa')){
+        message.reply({
+            content: 'feur',
+        })
+    }
+    if(messageLower.includes('koua')){
+        message.reply({
+            content: 'feur',
+        })
+    }
     if(messageLower.includes('oui')){
+        message.reply({
+            content: 'stisti',
+        })
+    }
+    if(messageLower.includes('ui')){
         message.reply({
             content: 'stisti',
         })
