@@ -13,30 +13,29 @@ client.on('ready', () => {
     console.log("The Bot is Ready to Troll")
 })
 
-client.on('messageUpdate', (message) => {3
+client.on('messageUpdate', (oldMessage,newMessage) => {3
 
     let MessageGood:any = ''
-    MessageGood = message.content?.toLowerCase()
+    MessageGood = newMessage.content?.toLowerCase()
     MessageGood = MessageGood?.replace(/[^a-zA-Z\u00C0-\u00FF]+/g, '');
 
-
     if(MessageGood.includes('ping')){
-        message.reply({
+        newMessage.reply({
             content: 'pong',
         })
     }
     if(MessageGood.includes('quoi')){
-        message.reply({
+        newMessage.reply({
             content: 'feur',
         })
     }
     if(MessageGood.includes('ouai')){
-        message.reply({
+        newMessage.reply({
             content: 'stern',
         })
     }
     if(MessageGood.includes('oui')){
-        message.reply({
+        newMessage.reply({
             content: 'stiti',
         })
     }
